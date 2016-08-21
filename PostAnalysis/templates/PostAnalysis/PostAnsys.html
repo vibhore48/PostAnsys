@@ -1,5 +1,5 @@
 {% load staticfiles %}
-<!--<!DOCTYPE html>-->
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -10,30 +10,38 @@
 
     <title>Post Ansys | </title>
 
-
+      
+      
+      
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
       integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-    <!--&lt;!&ndash; Bootstrap &ndash;&gt;-->
-    <!--<link href="{{STATIC}}vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">-->
-    <!--&lt;!&ndash; Font Awesome &ndash;&gt;-->
-    <!--<link href="{{STATIC}}vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">-->
-    <!--&lt;!&ndash; NProgress &ndash;&gt;-->
-    <!--<link href="{{STATIC}}vendors/nprogress/nprogress.css" rel="stylesheet">-->
-    <!--&lt;!&ndash; iCheck &ndash;&gt;-->
-    <!--<link href="{{STATIC}}vendors/iCheck/skins/flat/green.css" rel="stylesheet">-->
-    <!--&lt;!&ndash; bootstrap-progressbar &ndash;&gt;-->
-    <!--<link href="{{STATIC}}vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">-->
-    <!--&lt;!&ndash; JQVMap &ndash;&gt;-->
-    <!--<link href="{{STATIC}}vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>-->
+     <!--Font Awesome -->
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+      
+      
+    <!-- Bootstrap -->
+<!--    <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <!-- Font Awesome -->
+<!--    <link href="/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">-->
+    <!-- NProgress -->
+<!--    <link href="/vendors/nprogress/nprogress.css" rel="stylesheet">-->
+    <!-- iCheck -->
+<!--    <link href="/vendors/iCheck/skins/flat/green.css" rel="stylesheet">-->
+    <!-- bootstrap-progressbar -->
+<!--    <link href="/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">-->
+    <!-- JQVMap -->
+<!--    <link href="/vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>-->
 
     <!-- Custom Theme Style -->
-    <link type="text/css" href="{% static 'PostAnalysis/css/custom.min.css' %}" rel="stylesheet">
+    <link href="{% static 'PostAnalysis/css/custom.min.css' %}" rel="stylesheet">
   </head>
 
     <body class="nav-md">
     <div class="container body">
+      <div class="main_container">
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
@@ -167,7 +175,7 @@
                   <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
                     <li>
                       <a>
-                        <span class="image"><img src="{% static 'PostAnalysis/images/img.jpg' %}" alt="Profile Image" /></span>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
                         <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>
@@ -179,7 +187,7 @@
                     </li>
                     <li>
                       <a>
-                        <span class="image"><img src="{% static 'PostAnalysis/images/img.jpg' %}" alt="Profile Image" /></span>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
                         <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>
@@ -191,7 +199,7 @@
                     </li>
                     <li>
                       <a>
-                        <span class="image"><img src="{% static 'PostAnalysis/images/img.jpg' %}" alt="Profile Image" /></span>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
                         <span>
                           <span>John Smith</span>
                           <span class="time">3 mins ago</span>
@@ -229,18 +237,18 @@
         </div>
         <!-- /top navigation -->
 
-          
-          
-          
-          
-          
-          
+
+
+
+
+
+
         <div class="right_col" role="main">
           <div class="row">
-          
+
            <!-- page content -->
            <div class="col-md-12 col-sm-12 col-xs-12" style="margin-top:0px;margin-bottom:0px;">
-        
+
           <div class="x_content">
 
                   <div class="bs-example" data-example-id="simple-jumbotron">
@@ -251,20 +259,20 @@
                         This helps to keep track for your progress, motivate you for futher postings, and amend the shortcomings in future posts.</p>
                     </div>
                   </div>
-          </div>  
-          </div>  
+          </div>
+          </div>
            <!-- /page content -->
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
+
+
+
+
+
+
+
+
+
+
+
            <!-- page content -->
            <div class="col-md-12 col-sm-12 col-xs-12" style="margin-top:0px;margin-bottom:0px;">
 <!--
@@ -285,7 +293,7 @@
               </div>
             </div>
 -->
-            
+
             <div class="clearfix"></div>
 
             <div class="row">
@@ -338,11 +346,11 @@
                           <td>
                             <ul class="list-inline">
                               <li>
-                                <img src="{{STATIC}}images/user.png" class="avatar" alt="Avatar">
+                                <img src="{% static 'PostAnalysis/images/img.jpg' %}" class="avatar" alt="Avatar">
                               </li>
                             </ul>
                           </td>
-                    
+
                           <td>
                             <button type="button" class="btn btn-success btn-xs">Success</button>
                           </td>
@@ -358,7 +366,7 @@
                             <a href="#" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Delete </a>
                           </td>
                         </tr>
-                        
+
                       </tbody>
                     </table>
                     <!-- end project list -->
@@ -366,22 +374,22 @@
                   </div>
                 </div>
               </div>
-        
+
         </div>
-        </div>  
+        </div>
         <!-- /page content -->
-          
-          
-          
-          
-          
-          
-          
-          
+
+
+
+
+
+
+
+
 
            <!-- page content -->
            <div class="col-md-12 col-sm-12 col-xs-12">
-    
+
 <!--
             <div class="page-title">
               <div class="title_left">
@@ -428,14 +436,14 @@
                   <div class="x_content">
 
                     <div class="col-md-8 col-lg-8 col-sm-7">
-                  
+
                         <h1>Post Section</h1>
-                        
+
                     </div>
                     <div class="col-md-4 col-lg-4 col-sm-5">
 
                         <h1>Post sidebar</h1>
-        
+
 <!--
                     <div class="col-md-12">
                       <h4>Labels and badges</h4>
@@ -453,17 +461,17 @@
               </div>
             </div>
     </div>
-</div>           
+</div>
         <!-- /page content -->
-            
-            
-            
-            
-            
-            
-            
-            
-          
+
+
+
+
+
+
+
+
+
             <!-- page content -->
             <div class="col-md-12 col-sm-12 col-xs-12" style="margin-top:0px;margin-bottom:0px;">
 
@@ -490,7 +498,7 @@
             <div class="clearfix"></div>
 -->
 
-            
+
 <!--              <div cass="col-md-12 col-sm-12 col-xs-12">-->
                 <div class="x_panel" style="height:600px;">
                   <div class="x_title">
@@ -589,9 +597,9 @@
                           </div>
                         </div>
                         <!-- price element -->
-            
-                          
-                          
+
+
+
 
                         <!-- price element -->
                         <div class="col-md-3 col-sm-6 col-xs-12">
@@ -833,8 +841,10 @@
             
           
         </div>
-        <!--</div>-->
+        </div>
 
+          
+        
           <!--JavaScript-->
  <!-- Placed at the end of the document so the pages load faster -->
 
@@ -845,46 +855,52 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
         integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<script src="https://use.fontawesome.com/77a1c1130c.js"></script>
-          <!--&lt;!&ndash; jQuery &ndash;&gt;-->
-    <!--<script src="{{STATIC}}vendors/jquery/dist/jquery.min.js"></script>-->
-    <!--&lt;!&ndash; Bootstrap &ndash;&gt;-->
-    <!--<script src="{{STATIC}}vendors/bootstrap/dist/js/bootstrap.min.js"></script>-->
-    <!--&lt;!&ndash; FastClick &ndash;&gt;-->
-    <!--<script src="{{STATIC}}vendors/fastclick/lib/fastclick.js"></script>-->
-    <!--&lt;!&ndash; NProgress &ndash;&gt;-->
-    <!--<script src="{{STATIC}}vendors/nprogress/nprogress.js"></script>-->
-    <!--&lt;!&ndash; Chart.js &ndash;&gt;-->
-    <!--<script src="{{STATIC}}vendors/Chart.js/dist/Chart.min.js"></script>-->
-    <!--&lt;!&ndash; gauge.js &ndash;&gt;-->
-    <!--<script src="{{STATIC}}vendors/gauge.js/dist/gauge.min.js"></script>-->
-    <!--&lt;!&ndash; bootstrap-progressbar &ndash;&gt;-->
-    <!--<script src="{{STATIC}}vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>-->
-    <!--&lt;!&ndash; iCheck &ndash;&gt;-->
-    <!--<script src="{{STATIC}}vendors/iCheck/icheck.min.js"></script>-->
-    <!--&lt;!&ndash; Skycons &ndash;&gt;-->
-    <!--<script src="{{STATIC}}vendors/skycons/skycons.js"></script>-->
-    <!--&lt;!&ndash; Flot &ndash;&gt;-->
-    <!--<script src="{{STATIC}}vendors/Flot/jquery.flot.js"></script>-->
-    <!--<script src="{{STATIC}}vendors/Flot/jquery.flot.pie.js"></script>-->
-    <!--<script src="{{STATIC}}vendors/Flot/jquery.flot.time.js"></script>-->
-    <!--<script src="{{STATIC}}vendors/Flot/jquery.flot.stack.js"></script>-->
-    <!--<script src="{{STATIC}}vendors/Flot/jquery.flot.resize.js"></script>-->
-    <!--&lt;!&ndash; Flot plugins &ndash;&gt;-->
-    <!--<script src="{{STATIC}}vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>-->
-    <!--<script src="{{STATIC}}vendors/flot-spline/js/jquery.flot.spline.min.js"></script>-->
-    <!--<script src="{{STATIC}}vendors/flot.curvedlines/curvedLines.js"></script>-->
-    <!--&lt;!&ndash; DateJS &ndash;&gt;-->
-    <!--<script src="{{STATIC}}vendors/DateJS/build/date.js"></script>-->
-    <!--&lt;!&ndash; JQVMap &ndash;&gt;-->
-    <!--<script src="{{STATIC}}vendors/jqvmap/dist/jquery.vmap.js"></script>-->
-    <!--<script src="{{STATIC}}vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>-->
-    <!--<script src="{{STATIC}}vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>-->
-    <!--&lt;!&ndash; bootstrap-daterangepicker &ndash;&gt;-->
-    <!--<script src="js/moment/moment.min.js"></script>-->
-    <!--<script src="js/datepicker/daterangepicker.js"></script>-->
+        
+          <!-- jQuery -->
+<!--    <script src="/vendors/jquery/dist/jquery.min.js"></script>-->
+    <!-- Bootstrap -->
+<!--    <script src="/vendors/bootstrap/dist/js/bootstrap.min.js"></script>-->
+    <!-- FastClick -->
+<!--    <script src="/vendors/fastclick/lib/fastclick.js"></script>-->
+    <!-- NProgress -->
+<!--    <script src="/vendors/nprogress/nprogress.js"></script>-->
+    <!-- Chart.js -->
+<!--    <script src="/vendors/Chart.js/dist/Chart.min.js"></script>-->
+    <!-- gauge.js -->
+<!--    <script src="/vendors/gauge.js/dist/gauge.min.js"></script>-->
+    <!-- bootstrap-progressbar -->
+<!--    <script src="/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>-->
+    <!-- iCheck -->
+<!--    <script src="/vendors/iCheck/icheck.min.js"></script>-->
+    <!-- Skycons -->
+<!--    <script src="/vendors/skycons/skycons.js"></script>-->
+    <!-- Flot -->
+<!--
+    <script src="/vendors/Flot/jquery.flot.js"></script>
+    <script src="/vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="/vendors/Flot/jquery.flot.time.js"></script>
+    <script src="/vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="/vendors/Flot/jquery.flot.resize.js"></script>
+-->
+    <!-- Flot plugins -->
+<!--
+    <script src="/vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="/vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="/vendors/flot.curvedlines/curvedLines.js"></script>
+-->
+    <!-- DateJS -->
+<!--    <script src="/vendors/DateJS/build/date.js"></script>-->
+    <!-- JQVMap -->
+<!--
+    <script src="/vendors/jqvmap/dist/jquery.vmap.js"></script>
+    <script src="/vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script src="/vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+-->
+    <!-- bootstrap-daterangepicker -->
+<!--    <script src="js/moment/moment.min.js"></script>-->
+<!--    <script src="js/datepicker/daterangepicker.js"></script>-->
 
-    <!--&lt;!&ndash; Custom Theme Scripts &ndash;&gt;-->
-    <!--<script src="{{STATIC}}build/js/custom.min.js"></script>-->
+    <!-- Custom Theme Scripts -->
+    <script src="{% static 'PostAnalysis/js/custom.min.js' %}"></script>
   </body>
 </html>

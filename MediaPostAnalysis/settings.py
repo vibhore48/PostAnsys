@@ -127,3 +127,13 @@ STATIC_URL = '/static/'
 # c:\> git commit -m "first commit"
 # c:\> git remote add origin < copy the url from github >
 # c:\> git push origin master
+
+
+# Facebook settings
+FACEBOOK_APP_ID = '657184374444005'
+FACEBOOK_API_SECRET = 'f46413f594d316ffe2a1c8b7048f9388'
+
+
+AUTHENTICATION_BACKENDS = (
+    'social_auth.backends.facebook.FacebookBackend',
+)
